@@ -1,0 +1,33 @@
+form{
+  margin-left:40%;
+  margin-top:3%;
+}
+
+ul{
+  margin-left:38%;
+  margin-top:20px;
+  inline-size: 450px;
+}
+
+h1{
+  margin-left:38%;
+}
+
+p{
+  margin-left:40%;
+}
+
+input{
+  padding:10px 15px;
+  font-size: 0.9rem;
+}
+
+button{
+  padding:10px 15px;
+}
+
+#spinner{
+  position: absolute;
+  top: 50%;
+  left:50%;
+}
