@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e49005a9.css",
-    "main.js": "/static/js/main.453ab920.js",
-    "static/js/787.206fb123.chunk.js": "/static/js/787.206fb123.chunk.js",
-    "static/media/axios.cjs": "/static/media/axios.33cfa09f5297bf2e21f8.cjs",
-    "index.html": "/index.html",
-    "main.e49005a9.css.map": "/static/css/main.e49005a9.css.map",
-    "main.453ab920.js.map": "/static/js/main.453ab920.js.map",
-    "787.206fb123.chunk.js.map": "/static/js/787.206fb123.chunk.js.map"
+    "main.css": "/git-repo-lister/static/css/main.e49005a9.css",
+    "main.js": "/git-repo-lister/static/js/main.bdb831ad.js",
+    "static/js/787.206fb123.chunk.js": "/git-repo-lister/static/js/787.206fb123.chunk.js",
+    "static/media/axios.cjs": "/git-repo-lister/static/media/axios.33cfa09f5297bf2e21f8.cjs",
+    "index.html": "/git-repo-lister/index.html",
+    "main.e49005a9.css.map": "/git-repo-lister/static/css/main.e49005a9.css.map",
+    "main.bdb831ad.js.map": "/git-repo-lister/static/js/main.bdb831ad.js.map",
+    "787.206fb123.chunk.js.map": "/git-repo-lister/static/js/787.206fb123.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e49005a9.css",
-    "static/js/main.453ab920.js"
+    "static/js/main.bdb831ad.js"
   ]
 }
