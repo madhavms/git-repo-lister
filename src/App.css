@@ -124,6 +124,10 @@ li i {
     font-size: 16px;
     width: 30ch;
   }
+
+  .navbar-title {
+    font-size: 26px;
+  }
   
   .form-button {
     font-size: 16px;
@@ -136,6 +140,10 @@ li i {
     font-size: 14px;
     width: 25ch;
   }
+
+  .navbar-title {
+    font-size: 22px;
+  }
   
   .form-button {
     font-size: 14px;
@@ -146,6 +154,10 @@ li i {
   .form-input {
     font-size: 12px;
     width: 20ch;
+  }
+
+  .navbar-title {
+    font-size: 18px;
   }
   
   .form-button {
