@@ -4,46 +4,52 @@ import { List } from './components/List';
 import { useState, useEffect } from 'react';
 import { Loader } from './components/Loader';
 
-const DEFAULT_USER = 'facebook';
 
 function App() {
   const [repos, setRepos] = useState([]);
-  const [user, setUser] = useState(DEFAULT_USER);
+  const [user, setUser] = useState({name:''});
   const [text, setText] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const [searchInitialised, setSearchInitalised] = useState(false)
 
   useEffect(() => {
-    getRepos({ username: user, setIsLoading }).then((data) => setRepos(data));
+    if(!!user.name)
+    getRepos({ username: user.name, setIsLoading }).then((data) => setRepos(data));
   }, [user]);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (text) {
-      setUser(text);
+      setSearchInitalised(true)
+      setUser({name: text});
       setIsLoading(true);
     }
   };
 
   return (
-    <div className="App">
-      <h1>Repos for user: {user}</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          className="form-input"
-          placeholder="Enter username"
-          onChange={(e) => setText(e.target.value)}
-        />
-        <button
-          type="submit"
-          className="btn btn-primary form-button"
-          disabled={!text}
-        >
-          Submit
-        </button>
-      </form>
-      <Loader isLoading={isLoading}>
-        <List repos={repos} isLoading={isLoading} />
-      </Loader>
+    <div>
+      <nav className="navbar">
+        <h1 className="navbar-title">Git Repo Lister</h1>
+      </nav>
+      <div className="container">
+        <form className="form" onSubmit={handleFormSubmit}>
+          <input
+            className="form-input"
+            placeholder="Enter username"
+            onChange={(e) => setText(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="btn btn-primary form-button"
+            disabled={!text}
+          >
+            Submit
+          </button>
+        </form>
+        <Loader isLoading={isLoading}>
+          <List repos={repos} isLoading={isLoading} searchInitialised={searchInitialised} />
+        </Loader>
+      </div>
     </div>
   );
 }

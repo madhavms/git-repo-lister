@@ -4,15 +4,12 @@
   font-family: Arial, sans-serif;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
 .form {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-left: 4rem;
 }
 
 .form-input {
@@ -68,4 +65,33 @@ li i {
 .loader::after {
   content: 'Loading...';
   font-size: 1.2rem;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-title {
+  font-size: 28px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.form-input {
+  font-size: 18px;
+}
+
+.form-button {
+  font-size: 18px;
 }
