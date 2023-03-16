@@ -36,7 +36,7 @@ function App() {
           <div className="form-input-container">
             <input
               className="form-input"
-              placeholder="Enter username"
+              placeholder="Your GitHub handle"
               value={text}
               onChange={(e) => setText(e.target.value)}
             />
