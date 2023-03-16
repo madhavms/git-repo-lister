@@ -111,10 +111,46 @@ li i {
 
 .form-input {
   font-size: 18px;
+  width: 40ch;
 }
 
 .form-button {
   font-size: 18px;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .form-input {
+    font-size: 16px;
+    width: 30ch;
+  }
+  
+  .form-button {
+    font-size: 16px;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 400px) {
+  .form-input {
+    font-size: 14px;
+    width: 25ch;
+  }
+  
+  .form-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 315px) {
+  .form-input {
+    font-size: 12px;
+    width: 20ch;
+  }
+  
+  .form-button {
+    font-size: 12px;
+  }
 }
 
 .input-group {
