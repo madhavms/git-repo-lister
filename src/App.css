@@ -9,7 +9,6 @@
   justify-content: center;
   margin-bottom: 2rem;
   margin-top: 4rem;
-  margin-left: 4rem;
 }
 
 .form-input {
@@ -68,21 +67,18 @@ li i {
 }
 
 .navbar {
-  background-color: #333;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  padding: 0 20px;
+  background-color: #333;
+  color: white;
 }
 
 .navbar-title {
-  font-size: 28px;
+  font-size: 32px;
 }
 
-.container {
-  margin: 20px;
-}
 
 .subtitle {
   font-size: 22px;
