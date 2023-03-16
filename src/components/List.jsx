@@ -3,7 +3,7 @@ import '../styles/List.css';
 export const List = (props) => {
   const {repos, isLoading, searchInitialised} = props;
   if(!repos) return null;
-  if(!repos.length && !isLoading && searchInitialised) return <p>Sorry, no items found</p>
+  if(!repos.length && !isLoading && searchInitialised) return <div class="flex"><p>Sorry, no items found</p></div>
   console.log(repos)
   return(
     <ul className="list">

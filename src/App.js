@@ -4,17 +4,16 @@ import { List } from './components/List';
 import { useState, useEffect } from 'react';
 import { Loader } from './components/Loader';
 
-
 function App() {
   const [repos, setRepos] = useState([]);
   const [user, setUser] = useState({name:''});
   const [text, setText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [searchInitialised, setSearchInitalised] = useState(false)
+  const [searchInitialised, setSearchInitalised] = useState(false);
 
   useEffect(() => {
-    if(!!user.name)
-    getRepos({ username: user.name, setIsLoading }).then((data) => setRepos(data));
+    if (!!user.name)
+      getRepos({ username: user.name, setIsLoading }).then((data) => setRepos(data));
   }, [user]);
 
   const handleFormSubmit = (e) => {
@@ -26,6 +25,10 @@ function App() {
     }
   };
 
+  const handleClearClick = () => {
+    setText('');
+  }
+
   return (
     <div>
       <nav className="navbar">
@@ -33,11 +36,14 @@ function App() {
       </nav>
       <div className="container">
         <form className="form" onSubmit={handleFormSubmit}>
-          <input
-            className="form-input"
-            placeholder="Enter username"
-            onChange={(e) => setText(e.target.value)}
-          />
+          <div className="form-input-container">
+            <input
+              className="form-input"
+              placeholder="Enter username"
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+            />
+          </div>
           <button
             type="submit"
             className="btn btn-primary form-button"

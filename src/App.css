@@ -11,6 +11,13 @@
   margin-top: 4rem;
 }
 
+.form-input-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  max-width: 100%;
+}
+
 .form-input {
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -19,6 +26,25 @@
   width: 20rem;
   max-width: 100%;
   margin-right: 0.5rem;
+}
+
+.form-input-with-clear-btn {
+  padding-right: 2.5rem;
+}
+
+.form-input-clear-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+}
+
+.form-input-clear-btn:hover {
+  color: #000;
 }
 
 .form-button {
@@ -79,7 +105,6 @@ li i {
   font-size: 32px;
 }
 
-
 .subtitle {
   font-size: 22px;
 }
@@ -90,4 +115,32 @@ li i {
 
 .form-button {
   font-size: 18px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+}
+
+.form-input {
+  padding-right: 40px;
+}
+
+.input-group-append {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #6c757d;
+  border-color: transparent;
+}
+
+.btn-outline-secondary:hover {
+  color: #343a40;
 }

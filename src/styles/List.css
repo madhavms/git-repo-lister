@@ -10,7 +10,11 @@
   color: inherit;
   text-decoration: none;
 }
-
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .list-item {
   margin-bottom: 1rem;
   padding: 1rem;
