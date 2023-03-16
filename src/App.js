@@ -25,9 +25,6 @@ function App() {
     }
   };
 
-  const handleClearClick = () => {
-    setText('');
-  }
 
   return (
     <div>
