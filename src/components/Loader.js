@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Loader = ({children, isLoading}) => {
   if(!isLoading) {
     return children

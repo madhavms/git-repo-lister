@@ -1,4 +1,5 @@
 import '../styles/List.css';
+import React from 'react';
 
 export const List = (props) => {
   const {repos, isLoading, searchInitialised} = props;
